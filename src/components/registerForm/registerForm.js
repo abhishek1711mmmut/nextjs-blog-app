@@ -1,6 +1,6 @@
 "use client"
 import { register } from '@/lib/action'
-import styles from './registerform.module.css'
+import styles from './registerForm.module.css'
 import { useFormState } from "react-dom"
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
