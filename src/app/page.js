@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
 // import HydrationTest from '@/components/hydrationTest'
 // import dynamic from 'next/dynamic'
 // const HyderationTestNoSSR = dynamic(() => import("@/components/hydrationTest"), { ssr: false })
@@ -20,8 +21,8 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit modi recusandae, maxime architecto rem ex corrupti molestiae aliquam autem laudantium sint? Rerum est, ratione iusto soluta inventore sit hic?
         </p>
         <div className={styles.buttons}>
-          <button className={styles.button}>Learn More</button>
-          <button className={styles.button}>Contact</button>
+          <Link href={"/about"} className={styles.button}>Learn More</Link>
+          <Link href={"/contact"} className={styles.button}>Contact</Link>
         </div>
         <div className={styles.brands}>
           <Image src="/brands.png" alt='' fill className={styles.brandImg} />
